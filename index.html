@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ticketing System</title>
+        <!-- font family link -->
+        
+        <!-- lexend font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <!-- font icon link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- tailwind and daisy ui link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+       
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                 primary: '#B4F461',
+                 secondary: '#F9F7F3',
+                 buttonColor : '#1111110D',
+                 body:'#03071299',
+                 buttonColor:'rgba(29,209,0,0.15)',
+                }
+              
+              
+              }
+            }
+          }
+        </script>
+    </head>
 <body>
+    <header>
+        <!-- navbar start -->
+        <nav class="bg-secondary sm:bg-secondary">
+            <div class="navbar container  mx-auto sm:mx-2 gap-4 py-4">
+  <div class="navbar-start">
+    
+    <div class="navbar-end">
+        <a class="btn sm:px-2 text-xs bg-primary lg:bg-primary px-6 text-xl ">Blog</a>
+      </div>
+    
+  </div>
+  <div class="navbar-center gap-2">
+    <span><img class="w-6" src="assets/logo.png" alt=""></span>
+    <span class="sm:text-xl lg:text-2xl font-bold">Donate Bangladesh</span>
+  </div>
+  <div class="navbar-end">
+   <p class="flex gap-2">
+    <span><img src="assets/coin.png" alt=""></span>
+    <span>5500</span>
+    <span>BDT</span>
+   </p>
+  </div>
+</div>
+        </nav>
+        <!-- button start -->
+         <div class=" flex justify-center gap-3 mt-10 bg-white">
+            <a class="btn bg-primary hover:bg-primary px-6 text-xl">Donation</a>
+            <a class="btn bg-gray-200 px-6 text-xl">History</a>
+         </div>
+    </header>
     
 </body>
 </html>
