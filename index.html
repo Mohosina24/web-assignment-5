@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ticketing System</title>
+        <title>Donate Bangladesh</title>
         <!-- font family link -->
         
         <!-- lexend font -->
@@ -76,17 +76,17 @@
                     alt="Movie" />
                 </figure>
                 <div class="card-body space-y-5">
-                    <p id="card1-taka" class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
+                    <p  class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <span>0</span>
+                        <span id="card1-taka">0</span>
                         <span>BDT</span>
                        </p>
 
                   <h2 class="card-title text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                   <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure.r <br>donation will help provide essential supplies and  to those affected  by this disaster.<br> Every contribution, big or small, makes  difference. Please join us in supporting the <br> relief  efforts and making a positive impact on the lives of those in need.</p>
                   <div class="card-actions ">
-                    <input id="noakhali-input" type="number" placeholder="Write donate amount" class="input input-bordered w-full " />
-                    <button id="noakhali-btn" class="btn bg-primary w-full text-xl" onclick="my_modal_1.showModal()">Donate Now</button>
+                    <input id="noakhali-input" type="text" placeholder="Write donate amount" class="input input-bordered w-full " />
+                    <button id="noakhali-btn" class="btn bg-primary w-full text-xl" onclick="my_modal_1">Donate Now</button>
                         <!-- modal -->
        <!-- Open the modal using ID.showModal() method -->
 <dialog id="my_modal_1" class="modal">
@@ -99,7 +99,7 @@
       <div class="modal-action ">
         <form method="dialog ">
           <!-- if there is a button in form, it will close the modal -->
-          <button class="btn mr-36  hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
+          <button id="modal-close" class="btn mr-36  hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
         </form>
       </div>
     </div>
@@ -166,6 +166,9 @@
      <footer class="footer footer-center bg-secondary  text-base-content rounded p-10">
       
       </footer>
+
+      <script src="js/utilities.js"></script>
+      <script src="js/add-money.js"></script>
     
 </body>
 </html>
