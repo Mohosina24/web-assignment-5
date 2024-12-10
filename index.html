@@ -25,7 +25,7 @@
                  secondary: '#F9F7F3',
                  buttonColor : '#1111110D',
                  body:'#03071299',
-                 buttonColor:'rgba(29,209,0,0.15)',
+               
                 }
               
               
@@ -51,9 +51,9 @@
     <span class="sm:text-xl lg:text-2xl font-bold">Donate Bangladesh</span>
   </div>
   <div class="navbar-end">
-   <p id="total-amount" class="flex sm:gap-0 lg:gap-2">
+   <p  class="flex sm:gap-0 lg:gap-2">
     <span><img src="assets/coin.png" alt=""></span>
-    <span>5500</span>
+    <span id="total-amount">5500</span>
     <span>BDT</span>
    </p>
   </div>
@@ -96,10 +96,10 @@
       <p class="py-4 font-semibold">You Have Donate For Humankind
        </p>
         <p class="text-2xl font-bold"> Successfully.</p>
-      <div class="modal-action ">
+      <div class="modal-action  flex justify-center items-center ">
         <form method="dialog ">
           <!-- if there is a button in form, it will close the modal -->
-          <button id="modal-close" class="btn mr-36  hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
+          <button id="modal-close" class="btn  hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
         </form>
       </div>
     </div>
@@ -117,9 +117,9 @@
             alt="Movie" />
         </figure>
         <div class="card-body space-y-4">
-            <p id="card2-taka" class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
+            <p  class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
                 <span><img src="assets/coin.png" alt=""></span>
-                <span>600</span>
+                <span id="card2-taka">600</span>
                 <span>BDT</span>
                </p>
 
@@ -127,8 +127,26 @@
           <p>The recent floods in Feni have devastated local communities, leading to severe disruption <br>and loss. Your generous donation will help provide immediate aid, including food, <br> clean water, and medical supplies, to those affected by this calamity. Together,<br> we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every <br>contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
           
           <div class="card-actions ">
-            <input id="fani-input" type="number" placeholder="Write donate amount" class="input input-bordered w-full " />
-            <button id="fani-btn" class="btn bg-primary w-full text-xl">Donate Now</button>
+            <input id="fani-input" type="text" placeholder="Write donate amount" class="input input-bordered w-full " />
+           
+            <button id="fani-btn" class="btn bg-primary w-full text-xl" onclick="my_modal_1">Donate Now</button>
+                        <!-- modal -->
+       <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+    <div class="modal-box text-center">
+      <h3 class="text-4xl  font-bold text-green-400">Congratulation!</h3>
+      <img src="assets/coin.png" class="mx-auto mt-2" alt="">
+      <p class="py-4 font-semibold">You Have Donate For Humankind
+       </p>
+        <p class="text-2xl font-bold"> Successfully.</p>
+      <div class="modal-action flex justify-center items-center ">
+        <form method="dialog ">
+          <!-- if there is a button in form, it will close the modal -->
+          <button id="modal-close" class="btn  hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
           </div>
         </div>
       </div>
@@ -142,17 +160,35 @@
                     alt="Movie" />
                 </figure>
                 <div class="card-body space-y-5">
-                    <p id="card3-taka" class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
+                    <p  class="flex sm:gap-0 lg:gap-2 bg-gray-100  rounded-xl  w-36 text-center p-2">
                         <span><img src="assets/coin.png" alt=""></span>
-                        <span>2400</span>
+                        <span id="card3-taka">2400</span>
                         <span>BDT</span>
                        </p>
 
                   <h2 class="card-title text-2xl font-bold">Aid for Injured in the Quota Movement</h2>
                   <p class=""> The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals.  Your support is crucial in providing  <br> medical assistance, rehabilitation, and necessary supplies to those affected.  <br>By contributing, you help ensure that injured individuals receive the care and support they need  <br>during this challenging time. Every donation plays a vital role in alleviating their<br> suffering and aiding in their recovery. Please consider making a donation  <br> to support these brave individuals in their time of need.</p>
                   <div class="card-actions ">
-                    <input id="quata-input" type="number" placeholder="Write donate amount" class="input input-bordered w-full " />
-                    <button id="quata-btn" class="btn bg-primary w-full text-xl">Donate Now</button>
+                    <input id="quata-input" type="text" placeholder="Write donate amount" class="input input-bordered w-full " />
+                   
+                    <button id="quata-btn" class="btn bg-primary w-full text-xl" onclick="my_modal_1">Donate Now</button>
+                    <!-- modal -->
+   <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+<div class="modal-box text-center">
+  <h3 class="text-4xl  font-bold text-green-400">Congratulation!</h3>
+  <img src="assets/coin.png" class="mx-auto mt-2" alt="">
+  <p class="py-4 font-semibold">You Have Donate For Humankind
+   </p>
+    <p class="text-2xl font-bold"> Successfully.</p>
+  <div class="modal-action flex justify-center items-center ">
+    <form method="dialog ">
+      <!-- if there is a button in form, it will close the modal -->
+      <button id="modal-close" class="btn   hover:bg-primary  bg-primary px-12 rounded-full text-black ">Close confirmation</button>
+    </form>
+  </div>
+</div>
+</dialog>
                   </div>
                 </div>
               </div>
@@ -169,6 +205,7 @@
 
       <script src="js/utilities.js"></script>
       <script src="js/add-money.js"></script>
+      <script src="js/cashout.js"></script>
     
 </body>
 </html>
