@@ -8,3 +8,11 @@ function getInputFieldValueById(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
+
+function showSectionById(id){
+
+    document.getElementById('section-one').classList.add('hidden');
+    document.getElementById('transaction-taka').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}
+
