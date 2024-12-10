@@ -28,6 +28,10 @@ if(!isNaN(getMoney2)){
   const newMoney2 = getMoney2 + addMoney2;
  document.getElementById('card2-taka').innerText = newMoney2;
  document.getElementById('my_modal_2').showModal();
+ const p = document.createElement('p');
+ p.innerText = `${getMoney2} Taka is Donate for Flood Relief in Feni,Bangladeshh`;
+ console.log(p)
+ document.getElementById('transaction-container').appendChild(p);
 
 }
 else{
@@ -43,7 +47,10 @@ if(!isNaN(getMoney3)){
   const newMoney3 = getMoney3 + addMoney3;
  document.getElementById('card3-taka').innerText = newMoney3;
  document.getElementById('my_modal_3').showModal();
- 
+ const p = document.createElement('p');
+ p.innerText = `${getMoney3}  Taka is Donated for Aid for Injured in the Quota Movement, Bangladeshh`;
+ console.log(p)
+ document.getElementById('transaction-container').appendChild(p);
 }
 else{
   alert('this is not a number');
